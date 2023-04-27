@@ -6,11 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 
 // ? CSS
-import './styles/css/index.css'
+import './styles/css/index.css';
 
-// ? Images
+// ? Libs
+import initSmoothScroll from './libs/smoothScroll';
 
-import './scripts/smoothScroll.js';
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(() => {
+    initSmoothScroll(115, 1400);
+  }, 500);
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

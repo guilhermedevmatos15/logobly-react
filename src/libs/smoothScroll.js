@@ -49,5 +49,3 @@ export default function initSmoothScroll(paddindTop=0, durationAnim=2000) {
    //   });
    // }
 }
-
-initSmoothScroll(115, 1400);
