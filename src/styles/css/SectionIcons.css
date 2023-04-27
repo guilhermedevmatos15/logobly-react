@@ -1,0 +1,48 @@
+.SectionIcons {
+   margin: 80px auto 0 auto;
+   width: 100%; max-width: 1500px;
+   padding: 20px;
+}
+
+.SectionIcons .cards {
+   width: auto;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.SectionIcons .card {
+   width: 250px;
+   /* background-color: #29a9f9; */
+   padding: 30px 20px;
+   border-radius: 20px;
+   text-align: center;
+   color: #151515;
+   transition: all .4s;
+}
+.SectionIcons .card, .SectionIcons .card > * {
+   cursor: default;
+}
+/* .SectionIcons .card:hover {
+   transform: scale(102%);
+   background-color: #125782;
+   color: white;
+   transition: all .4s;
+} */
+
+.SectionIcons .card svg {
+   font-size: 2.2rem;
+}
+
+.SectionIcons .card .title {
+   margin-top: 5px;
+   font-size: 1.1rem;
+   font-weight: 700;
+}
+
+.SectionIcons .card p:not(.title) {
+   margin-top: 10px;
+}

@@ -1,0 +1,20 @@
+.Navegation ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+}
+
+.Navegation li, .Navegation a {
+   text-decoration: none;
+   color: #111010;
+   font-size: 1.05rem;
+   cursor: pointer;
+   transition: all .4s;
+}
+.Navegation li:hover, .Navegation a:hover {
+   color: #4089dd;
+   cursor: pointer;
+   transition: all .4s;
+}

@@ -1,0 +1,31 @@
+.Footer {
+   margin-top: 100px;
+   width: 100%;
+   height: auto;
+   padding: 40px 30px;
+   background-color: rgb(12, 12, 12);
+   color: white;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.Footer img {
+   width: 100px;
+}
+
+.Footer a {
+   color: rgb(34, 111, 219);
+   cursor: pointer;
+   transition: all .4s;
+}
+
+.Footer a:hover {
+   color: rgb(96, 161, 253);
+   cursor: pointer;
+   transition: all .4s;
+}

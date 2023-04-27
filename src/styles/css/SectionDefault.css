@@ -1,0 +1,162 @@
+.SectionDefault.default {
+   margin: 80px auto 0 auto;
+   width: 100%;
+   max-width: 1500px;
+   min-height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+}
+
+.SectionDefault .image {
+   width: 50%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+.SectionDefault img {
+   width: 400px;
+}
+
+.SectionDefault .content {
+   width: 50%;
+   padding: 0 0 0 30px;
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 20px;
+}
+
+.SectionDefault .content h2 {
+   font-size: 2.3rem;
+   line-height: 2.8rem;
+}
+
+.SectionDefault .content p {
+   font-size: 1.1rem;
+   max-width: 500px;
+}
+
+.SectionDefault form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.SectionDefault .content input {
+}
+
+.SectionDefault button {
+   --color: #0077ff;
+   font-family: inherit;
+   display: inline-block;
+   width: 6em;
+   height: 2.6em;
+   line-height: 2.5em;
+   overflow: hidden;
+   margin: 20px;
+   font-size: 1rem;
+   z-index: 1;
+   color: var(--color);
+   border: 2px solid var(--color);
+   border-radius: 6px;
+   position: relative;
+   cursor: pointer;
+   background-color: transparent;
+}
+
+.SectionDefault button::before {
+   position: absolute;
+   content: '';
+   background: var(--color);
+   width: 150px;
+   height: 200px;
+   z-index: -1;
+   border-radius: 50%;
+}
+
+.SectionDefault button:hover {
+   color: white;
+}
+
+.SectionDefault button:before {
+   top: 100%;
+   left: 100%;
+   transition: 0.3s all;
+}
+
+.SectionDefault button:hover::before {
+   top: -30px;
+   left: -30px;
+}
+
+.SectionDefault input {
+   display: inline-block;
+   width: 100%;
+   max-width: 220px;
+   height: 45px;
+   padding: 12px;
+   border-radius: 12px;
+   border: 1.5px solid lightgrey;
+   outline: none;
+   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+   box-shadow: 0px 0px 20px -18px;
+}
+
+.SectionDefault input:hover {
+   border: 2px solid lightgrey;
+   box-shadow: 0px 0px 20px -17px;
+}
+
+.SectionDefault input:active {
+   transform: scale(0.95);
+}
+
+.SectionDefault input:focus {
+   border: 2px solid grey;
+}
+
+
+
+
+/* Section inverted */
+.SectionDefault.inverted {
+   margin: 80px auto 0 auto;
+   width: 100%;
+   max-width: 1500px;
+   min-height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+}
+
+.SectionDefault.inverted .image {
+   justify-content: flex-start;
+}
+
+.SectionDefault.inverted .content {
+   align-items: flex-end;
+   text-align: right;
+}
+
+
+
+@media (max-width: 1000px) {
+   .SectionDefault.default, .SectionDefault.inverted {
+      margin-top: 50px;
+   }
+   .SectionDefault .image{
+      display: none;
+   }
+   .SectionDefault .content, .SectionDefault.inverted .content {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+   }
+}
